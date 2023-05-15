@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Switch
+        android:id="@+id/iceSwitch"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:text="🍧🍧🍧🍧🍧🍧🍧🍧"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="548dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Switch
+        android:id="@+id/taiyakiSwitch"
+        android:layout_width="125dp"
+        android:layout_height="48dp"
+        android:text="🐟🐟🐟🐟🐟🐟🐟🐟"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="686dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <ImageView
+        android:id="@+id/gearView"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:src="@drawable/gear"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="822dp"
+        tools:layout_editor_absoluteY="18dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="146dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textViewIce1000"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🍧0-10min🍧"
+            android:background="@drawable/frame_style_notactive"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textViewIce2010"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="🍧10-20min🍧"
+            android:background="@drawable/frame_style_notactive"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textViewIce3020"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="🍧20-30min🍧"
+            android:background="@drawable/frame_style_notactive"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textViewIce4030"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="🍧30-40min🍧"
+            android:background="@drawable/frame_style_notactive"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="403dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textViewIce5040"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="🍧40-50min🍧"
+            android:background="@drawable/frame_style_notactive"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="504dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="227dp">>
+
+        <TextView
+            android:id="@+id/textViewIce6050"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🍧50-60min🍧"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewIce7060"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🍧60-70min🍧"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewIce8070"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🍧70-80min🍧"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewIce9080"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🍧80-90min🍧"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textViewIce9090"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🍧90min+🍧"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="330dp">
+
+        <TextView
+            android:id="@+id/textViewTaiyaki1000"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🐟0-10min🐟"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textViewTaiyaki2010"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🐟10-20min🐟"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="204dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textViewTaiyaki3020"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🐟20-30min🐟"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="307dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+        <TextView
+            android:id="@+id/textViewTaiyaki3030"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🐟30min+🐟"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="403dp"
+            tools:layout_editor_absoluteY="139dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

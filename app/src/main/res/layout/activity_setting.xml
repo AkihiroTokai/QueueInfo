@@ -1,34 +1,150 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SettingActivity">
 
-    <com.google.android.material.appbar.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.QueueInfo.AppBarOverlay">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.QueueInfo.PopupOverlay" />
-
-    </com.google.android.material.appbar.AppBarLayout>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+    <CheckBox
+        android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="16dp"
-        android:layout_marginEnd="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        android:checked="true"
+        android:text="いちご"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="100dp" />
 
-    <include layout="@layout/content_setting" />
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="メロン"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="100dp" />
 
-</androidx.coordinatorlayout.widget.CoordinatorLayout>
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="みぞれ"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="401dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="せんじ金時"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="523dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="岐阜金時"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="683dp"
+        tools:layout_editor_absoluteY="100dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ブルーベリー"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="りんご"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="マンゴー"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="401dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="いちごミルク"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="523dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="いちじく"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="683dp"
+        tools:layout_editor_absoluteY="181dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洋梨"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="甘夏みかん"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="266dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="洋梨"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="401dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="みかん"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="523dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="うめ"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="683dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
