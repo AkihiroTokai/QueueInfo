@@ -1,58 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
-    <Switch
-        android:id="@+id/iceSwitch"
-        android:layout_width="125dp"
-        android:layout_height="48dp"
-        android:text="🍧🍧🍧🍧🍧🍧🍧🍧"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="548dp"
-        tools:layout_editor_absoluteY="16dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        tools:ignore="MissingConstraints">
 
-    <Switch
-        android:id="@+id/taiyakiSwitch"
-        android:layout_width="125dp"
-        android:layout_height="48dp"
-        android:text="🐟🐟🐟🐟🐟🐟🐟🐟"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="686dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <ImageView
+            android:id="@+id/gearView"
+            android:layout_width="53dp"
+            android:layout_height="46dp"
+            android:layout_gravity="right"
+            android:src="@drawable/gear"
+            tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/gearView"
-        android:layout_width="53dp"
-        android:layout_height="46dp"
-        android:src="@drawable/gear"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="822dp"
-        tools:layout_editor_absoluteY="18dp" />
+        <Switch
+            android:id="@+id/iceSwitch"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:text="🍧🍧🍧🍧🍧🍧🍧🍧" />
+
+        <Switch
+            android:id="@+id/taiyakiSwitch"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:text="🐟🐟🐟🐟🐟🐟🐟🐟" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="52dp"
-        tools:layout_editor_absoluteY="146dp"
         tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textViewIce1000"
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
+            android:background="@drawable/frame_style_notactive"
             android:gravity="center"
             android:text="🍧0-10min🍧"
-            android:background="@drawable/frame_style_notactive"
             tools:layout_editor_absoluteX="111dp"
             tools:layout_editor_absoluteY="139dp" />
 
@@ -60,15 +61,14 @@
             android:id="@+id/textViewIce2010"
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:gravity="center"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
-            android:text="🍧10-20min🍧"
             android:background="@drawable/frame_style_notactive"
-            tools:ignore="MissingConstraints"
+            android:gravity="center"
+            android:text="🍧10-20min🍧"
             tools:layout_editor_absoluteX="204dp"
             tools:layout_editor_absoluteY="139dp" />
 
@@ -76,15 +76,14 @@
             android:id="@+id/textViewIce3020"
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:gravity="center"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
-            android:text="🍧20-30min🍧"
             android:background="@drawable/frame_style_notactive"
-            tools:ignore="MissingConstraints"
+            android:gravity="center"
+            android:text="🍧20-30min🍧"
             tools:layout_editor_absoluteX="307dp"
             tools:layout_editor_absoluteY="139dp" />
 
@@ -92,15 +91,14 @@
             android:id="@+id/textViewIce4030"
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:gravity="center"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
-            android:text="🍧30-40min🍧"
             android:background="@drawable/frame_style_notactive"
-            tools:ignore="MissingConstraints"
+            android:gravity="center"
+            android:text="🍧30-40min🍧"
             tools:layout_editor_absoluteX="403dp"
             tools:layout_editor_absoluteY="139dp" />
 
@@ -108,14 +106,14 @@
             android:id="@+id/textViewIce5040"
             android:layout_width="30dp"
             android:layout_height="match_parent"
-            android:layout_marginTop="3dp"
             android:layout_marginBottom="3dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:gravity="center"
+            android:layout_marginTop="3dp"
             android:layout_weight="1"
-            android:text="🍧40-50min🍧"
             android:background="@drawable/frame_style_notactive"
+            android:gravity="center"
+            android:text="🍧40-50min🍧"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="504dp"
             tools:layout_editor_absoluteY="139dp" />
@@ -126,9 +124,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="227dp">>
+        tools:ignore="MissingConstraints">>
 
         <TextView
             android:id="@+id/textViewIce6050"
@@ -205,9 +201,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="330dp">
+        tools:ignore="MissingConstraints">
 
         <TextView
             android:id="@+id/textViewTaiyaki1000"
@@ -275,4 +269,4 @@
     </LinearLayout>
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

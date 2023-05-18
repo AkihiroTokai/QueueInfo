@@ -10,17 +10,18 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:screnOrientation="landscape"
         android:supportsRtl="true"
         android:theme="@style/Theme.QueueInfo"
         tools:targetApi="31">
         <activity
             android:name=".SettingActivity"
+            android:screenOrientation="landscape"
             android:exported="false"
             android:label="@string/title_activity_setting"
             android:theme="@style/Theme.QueueInfo.NoActionBar" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="landscape"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -60,10 +61,11 @@ class MainActivity : AppCompatActivity() {
         iceSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
             run {
                 if (isChecked) {
-                    iceOpen
+                    iceOpen = true
                     updateAllIceViewNotSelected()
                 } else {
-                    !iceOpen
+                    iceOpen = false
+                    iceStatusCode = 0
                     textViewIce1000.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewIce2010.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewIce3020.setBackgroundResource(R.drawable.frame_style_notactive)
@@ -82,10 +84,11 @@ class MainActivity : AppCompatActivity() {
         taiyakiSwitch.setOnCheckedChangeListener { buttonView, isChecked ->
             run {
                 if (isChecked) {
-                    taiyakiOpen
+                    taiyakiOpen = true
                     updateAllTaiyakiViewNotSelected()
                 } else {
-                    !taiyakiOpen
+                    taiyakiOpen = false
+                    taiyakiStatusCode = 0
                     textViewTaiyaki1000.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewTaiyaki2010.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewTaiyaki3020.setBackgroundResource(R.drawable.frame_style_notactive)
