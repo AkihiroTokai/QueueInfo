@@ -8,11 +8,11 @@
 
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/strawberry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="88dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="104dp"
         android:checked="true"
         android:text="いちご"
         app:layout_constraintEnd_toStartOf="@+id/checkBox2"
@@ -23,103 +23,122 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="92dp"
         android:checked="true"
         android:text="メロン"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:layout_marginTop="92dp"
         android:checked="true"
         android:text="みぞれ"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="401dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox4"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:layout_marginTop="92dp"
         android:checked="true"
         android:text="せんじ金時"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="523dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox5"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginTop="84dp"
         android:checked="true"
         android:text="岐阜金時"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="683dp"
-        tools:layout_editor_absoluteY="100dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginTop="29dp"
         android:text="ブルーベリー"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="101dp"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox7"
+        app:layout_constraintTop_toBottomOf="@+id/strawberry"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="40dp"
         android:text="りんご"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="266dp"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox8"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginTop="40dp"
         android:text="マンゴー"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="401dp"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox9"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="40dp"
         android:text="いちごミルク"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="523dp"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox10"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="136dp"
+        android:layout_marginTop="48dp"
         android:text="いちじく"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="683dp"
-        tools:layout_editor_absoluteY="181dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox5"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="104dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="28dp"
         android:text="洋梨"
         app:layout_constraintEnd_toStartOf="@+id/checkBox12"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintTop_toBottomOf="@+id/checkBox6"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="40dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
         android:text="甘夏みかん"
         app:layout_constraintEnd_toStartOf="@+id/checkBox13"
         app:layout_constraintTop_toBottomOf="@+id/checkBox7"
@@ -129,27 +148,33 @@
         android:id="@+id/checkBox13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="34dp"
         android:text="洋梨"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="401dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox14"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox8"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginTop="34dp"
         android:text="みかん"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="523dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintEnd_toStartOf="@+id/checkBox15"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox9"
+        tools:ignore="MissingConstraints" />
 
     <CheckBox
         android:id="@+id/checkBox15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="164dp"
+        android:layout_marginTop="24dp"
         android:text="うめ"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="683dp"
-        tools:layout_editor_absoluteY="271dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox10"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
