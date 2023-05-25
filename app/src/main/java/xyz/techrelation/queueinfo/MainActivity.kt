@@ -7,6 +7,10 @@ import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
+import com.google.firebase.database.ktx.database
+import com.google.firebase.ktx.Firebase
+import java.text.SimpleDateFormat
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -31,8 +35,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        var iceStatusCode = 0
+
         var iceNowSelectedView = 0
+        var iceStatusCode = 0
         var taiyakiStatusCode = 0
         var taiyakiNowSelectedView = 0
         var iceOpen = false
@@ -41,6 +46,12 @@ class MainActivity : AppCompatActivity() {
         val iceSwitch: Switch = findViewById(R.id.iceSwitch)
         val taiyakiSwitch: Switch = findViewById(R.id.taiyakiSwitch)
         val gearView: ImageView = findViewById(R.id.gearView)
+
+        val database = Firebase.database
+        val myRef = database.getReference("message")
+        myRef.setValue("Hello, World!")
+
+
 
          textViewIce1000 = this.findViewById(R.id.textViewIce1000)
          textViewIce2010 = this.findViewById(R.id.textViewIce2010)
@@ -66,6 +77,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     iceOpen = false
                     iceStatusCode = 0
+                    postIce(iceStatusCode)
                     textViewIce1000.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewIce2010.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewIce3020.setBackgroundResource(R.drawable.frame_style_notactive)
@@ -89,6 +101,7 @@ class MainActivity : AppCompatActivity() {
                 } else {
                     taiyakiOpen = false
                     taiyakiStatusCode = 0
+                    postTaiyaki(taiyakiStatusCode)
                     textViewTaiyaki1000.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewTaiyaki2010.setBackgroundResource(R.drawable.frame_style_notactive)
                     textViewTaiyaki3020.setBackgroundResource(R.drawable.frame_style_notactive)
@@ -110,7 +123,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce1000.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -122,7 +135,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce2010.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -134,7 +147,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce3020.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -146,7 +159,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce4030.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -158,7 +171,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce5040.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -170,7 +183,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce6050.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -182,7 +195,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce7060.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -194,7 +207,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce8070.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -206,7 +219,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce9080.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postIce(iceStatusCode)
                 }
             }
         }
@@ -218,7 +231,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce9090.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    //checkUpdate()
+                    postTaiyaki(taiyakiStatusCode)
                 }
             }
         }
@@ -230,7 +243,7 @@ class MainActivity : AppCompatActivity() {
                     taiyakiStatusCode = taiyakiNowSelectedView
                     updateAllTaiyakiViewNotSelected()
                     textViewTaiyaki1000.setBackgroundResource(R.drawable.frame_style_taiyakiselected)
-                    //checkUpdate()
+                    postTaiyaki(taiyakiStatusCode)
                 }
             }
         }
@@ -242,7 +255,7 @@ class MainActivity : AppCompatActivity() {
                     taiyakiStatusCode = taiyakiNowSelectedView
                     updateAllTaiyakiViewNotSelected()
                     textViewTaiyaki2010.setBackgroundResource(R.drawable.frame_style_taiyakiselected)
-                    //checkUpdate()
+                    postTaiyaki(taiyakiStatusCode)
                 }
             }
         }
@@ -254,7 +267,7 @@ class MainActivity : AppCompatActivity() {
                     taiyakiStatusCode = taiyakiNowSelectedView
                     updateAllTaiyakiViewNotSelected()
                     textViewTaiyaki3020.setBackgroundResource(R.drawable.frame_style_taiyakiselected)
-                    //checkUpdate()
+                    postTaiyaki(taiyakiStatusCode)
                 }
             }
         }
@@ -266,7 +279,7 @@ class MainActivity : AppCompatActivity() {
                     taiyakiStatusCode = taiyakiNowSelectedView
                     updateAllTaiyakiViewNotSelected()
                     textViewTaiyaki3030.setBackgroundResource(R.drawable.frame_style_taiyakiselected)
-                    //checkUpdate()
+                    postTaiyaki(taiyakiStatusCode)
                 }
             }
         }
@@ -291,5 +304,31 @@ class MainActivity : AppCompatActivity() {
         textViewTaiyaki2010.setBackgroundResource(R.drawable.frame_style_taiyakinotselected)
         textViewTaiyaki3020.setBackgroundResource(R.drawable.frame_style_taiyakinotselected)
         textViewTaiyaki3030.setBackgroundResource(R.drawable.frame_style_taiyakinotselected)
+    }
+
+    fun postIce(iceStatusCode: Int){
+        val database = Firebase.database
+        val iceSC = database.getReference("iceStatusCode")
+        val iceLastUpdate = getNow().toLong()
+        val iceLU = database.getReference("iceLastUpdate")
+
+        iceSC.setValue(iceStatusCode)
+        iceLU.setValue(iceLastUpdate)
+    }
+
+    fun postTaiyaki(taiyakiStatusCode: Int){
+        val database = Firebase.database
+        val taiyakiSC = database.getReference("taiyakiStatusCode")
+        val taiyakiLastUpdate = getNow().toLong()
+        val taiyakiLU = database.getReference("taiyakiLastUpdate")
+
+        taiyakiSC.setValue(taiyakiStatusCode)
+        taiyakiLU.setValue(taiyakiLastUpdate)
+    }
+
+    fun getNow(): String {
+        val date = Date()
+        val format = SimpleDateFormat("yyyyMMddHHmmss", Locale.getDefault())
+        return format.format(date)
     }
 }

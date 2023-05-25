@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "680045937128",
+    "project_id": "queueinfo-85b3d",
+    "storage_bucket": "queueinfo-85b3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680045937128:android:1d69ee936ef6072e76645d",
+        "android_client_info": {
+          "package_name": "xyz.techrelation.queueinfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "680045937128-vek4o1t6cn2p0qnn2ie9ob5e1n4qufc5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC12dXPws7VpQuLZ89JFUrNAsriSC3fK6Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "680045937128-vek4o1t6cn2p0qnn2ie9ob5e1n4qufc5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
