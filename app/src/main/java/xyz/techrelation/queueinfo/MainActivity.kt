@@ -231,7 +231,7 @@ class MainActivity : AppCompatActivity() {
                     iceStatusCode = iceNowSelectedView
                     updateAllIceViewNotSelected()
                     textViewIce9090.setBackgroundResource(R.drawable.frame_style_iceselected)
-                    postTaiyaki(taiyakiStatusCode)
+                    postIce(iceStatusCode)
                 }
             }
         }
